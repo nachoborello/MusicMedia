@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ReproductorActivity"
+    >
+
+    <TextView
+        android:id="@+id/txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:text="@string/nombreTemita"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ImageButton
+        android:id="@+id/imgbPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp"
+        android:background="@null"
+        android:onClick="reproducir"
+        android:src="@drawable/btn_pause" />
+
+    <ImageButton
+        android:id="@+id/imgbAdelante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgbPlay"
+        android:layout_toRightOf="@+id/imgbPlay"
+        android:background="@null"
+        android:onClick="adelante"
+        android:src="@drawable/btn_adelante" />
+
+    <ImageButton
+        android:id="@+id/imgbAtras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgbPlay"
+        android:layout_toLeftOf="@+id/imgbPlay"
+        android:background="@null"
+        android:onClick="atras"
+        android:src="@drawable/btn_atras" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgbAdelante"
+        android:layout_toRightOf="@+id/imgbAdelante"
+        android:onClick="cambio_adelante"
+        android:src="@drawable/btn_cambio_adelante" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgbAtras"
+        android:layout_toLeftOf="@+id/imgbAtras"
+        android:onClick="cambio_atras"
+        android:src="@drawable/btn_cambio_atras" />
+
+    <CheckBox
+        android:id="@+id/aleatorio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imgbAtras"
+        android:layout_alignRight="@+id/imgbAtras"
+        android:layout_marginBottom="15dp"
+        android:text="@string/aleatorio" />
+
+    <CheckBox
+        android:id="@+id/cbox_repetir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/aleatorio"
+        android:layout_alignBottom="@+id/aleatorio"
+        android:layout_toRightOf="@+id/imgbPlay"
+        android:text="@string/repetir" />
+
+</RelativeLayout>

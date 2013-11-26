@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MyCustomListView!</string>
+    <string name="app_name">Music Media</string>
+    <string name="play">Play</string>
+    <string name="adelante">&gt;&gt;</string>
+    <string name="atras">&lt;&lt;</string>
+    <string name="title_activity_reproductor">Music Media</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="nombreTema">.....</string>
+    <string name="nombreTemita">.....</string>
+    <string name="aleatorio">Aleatorio</string>
+    <string name="repetir">Repetir</string>
+
+</resources>
